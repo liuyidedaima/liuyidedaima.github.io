@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>项目概览｜火塘同心</title>
+  <meta name="theme-color" content="#ede2d2">
+  <meta
+    name="description"
+    content="火塘同心模块五：项目概览页面，以研究目标、研究内容、方法路径、阶段安排与预期成果为核心，呈现项目展示与材料预留入口。"
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@500;600;700;900&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="project" class="page-project">
+  <div class="site-shell">
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="header-bar">
+        <a class="brand" href="index.html" aria-label="返回火塘同心首页">
+          <span class="brand-mark">火</span>
+          <span class="brand-copy">
+            <strong>火塘同心</strong>
+            <small>从司莫拉读懂中华民族共同体意识</small>
+          </span>
+        </a>
+
+        <div class="nav-panel" id="navPanel">
+          <nav class="nav-links" aria-label="主导航">
+            <a href="index.html" data-page="home">首页</a>
+            <a href="research.html" data-page="overview">平台总览</a>
+            <a href="facts.html" data-page="facts">权威事实</a>
+            <a href="community.html" data-page="community">共同体意识</a>
+            <a href="footprint.html" data-page="map">云南足迹</a>
+            <a href="project.html" data-page="project" aria-current="page">项目概览</a>
+            <a href="about.html" data-page="about">关于我们</a>
+          </nav>
+          <a class="nav-utility" href="about.html" aria-label="进入关于我们页面">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M7 17 17 7"></path>
+              <path d="M9 7h8v8"></path>
+            </svg>
+          </a>
+        </div>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navPanel" aria-label="切换导航">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main class="page-wrap">
+      <section class="project-hero reveal">
+        <div class="project-stage">
+          <div class="project-hero-copy">
+            <p class="section-label">模块五</p>
+            <h1 class="project-display-title">项目概览</h1>
+            <h2>研究目标 · 研究内容 · 方法路径 · 阶段安排 · 预期成果</h2>
+            <span class="project-hero-divider" aria-hidden="true"></span>
+            <p>
+              本项目以腾冲司莫拉佤族村为核心案例，构建民族团结与中华民族共同体意识科普专题平台。
+              通过田野调研、资料梳理与网页呈现，形成可持续发展的研究成果与公众传播产品。
+            </p>
+          </div>
+
+          <figure class="project-hero-visual">
+            <img src="assets/fieldwork-interview-user.jpg" alt="项目调研访谈现场">
+          </figure>
+
+          <aside class="proposal-panel">
+            <div class="proposal-panel-head">
+              <span class="proposal-panel-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M7 4h8l4 4v12H7z"></path>
+                  <path d="M15 4v4h4"></path>
+                  <path d="M10 13h6"></path>
+                  <path d="M10 17h4"></path>
+                </svg>
+              </span>
+              <div>
+                <h3>申报书与项目材料</h3>
+                <p>上传项目申报书或相关材料，供后续展示与存档使用。</p>
+              </div>
+            </div>
+
+            <label class="proposal-upload-box" for="proposalUpload">
+              <span class="proposal-upload-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 16V5"></path>
+                  <path d="m8 9 4-4 4 4"></path>
+                  <path d="M5 18.5h14"></path>
+                </svg>
+              </span>
+              <span class="proposal-upload-trigger">选择文件上传</span>
+              <small>支持 PDF / Word 格式，大小不超过 50MB</small>
+            </label>
+            <input id="proposalUpload" class="proposal-upload-input" type="file" accept=".pdf,.doc,.docx" aria-label="选择项目申报书或项目材料">
+
+            <div class="proposal-current-box" aria-live="polite">
+              <div class="proposal-current-head">
+                <strong>当前文件（本地预览）</strong>
+              </div>
+
+              <div class="proposal-current-file">
+                <span class="proposal-file-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M7 4h8l4 4v12H7z"></path>
+                    <path d="M15 4v4h4"></path>
+                    <path d="M10 13h6"></path>
+                    <path d="M10 17h4"></path>
+                  </svg>
+                </span>
+                <div class="proposal-file-copy">
+                  <span id="proposalCurrentName">尚未选择文件</span>
+                  <small id="proposalCurrentSize">正式上传、解析与下载入口待后续补充。</small>
+                </div>
+                <div class="proposal-file-actions">
+                  <a class="source-link is-pending" id="proposalViewLink" href="#" data-pending-link="true" aria-disabled="true">查看</a>
+                  <a class="source-link is-pending" id="proposalDownloadLink" href="#" data-pending-link="true" aria-disabled="true">下载</a>
+                </div>
+              </div>
+
+              <p class="upload-status" id="proposalUploadStatus">尚未选择文件。正式上传、解析与下载入口待后续补充。</p>
+            </div>
+          </aside>
+
+          <div class="project-metrics" aria-label="项目数据概览">
+            <article class="project-metric-card">
+              <span class="project-metric-icon metric-terracotta" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="7"></circle>
+                  <circle cx="12" cy="12" r="2.5"></circle>
+                  <path d="M12 5V3"></path>
+                  <path d="M19 12h2"></path>
+                </svg>
+              </span>
+              <div class="project-metric-copy">
+                <strong>3</strong>
+                <h3>核心研究目标</h3>
+                <p>聚焦共同体意识实践</p>
+              </div>
+            </article>
+
+            <article class="project-metric-card">
+              <span class="project-metric-icon metric-pine" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M5 6h6v12H5z"></path>
+                  <path d="M13 6h6v12h-6z"></path>
+                  <path d="M11 8c1 .8 2 .8 3 0"></path>
+                </svg>
+              </span>
+              <div class="project-metric-copy">
+                <strong>5</strong>
+                <h3>研究内容板块</h3>
+                <p>案例 · 文化 · 旅游等</p>
+              </div>
+            </article>
+
+            <article class="project-metric-card">
+              <span class="project-metric-icon metric-gold" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <circle cx="8" cy="9" r="2.5"></circle>
+                  <circle cx="16" cy="9" r="2.5"></circle>
+                  <path d="M4.5 18c.8-2.6 2.7-4 5.5-4s4.7 1.4 5.5 4"></path>
+                  <path d="M11.5 18c.6-1.8 2-2.8 4-2.8S18.8 16.2 19.5 18"></path>
+                </svg>
+              </span>
+              <div class="project-metric-copy">
+                <strong>6</strong>
+                <h3>研究方法路径</h3>
+                <p>多方法交叉验证</p>
+              </div>
+            </article>
+
+            <article class="project-metric-card">
+              <span class="project-metric-icon metric-olive" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="8"></circle>
+                  <path d="M12 7v5l3 2"></path>
+                </svg>
+              </span>
+              <div class="project-metric-copy">
+                <strong>3</strong>
+                <h3>阶段研究安排</h3>
+                <p>已系统推进实施</p>
+              </div>
+            </article>
+
+            <article class="project-metric-card">
+              <span class="project-metric-icon metric-gold" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M8 4h8v3a4 4 0 0 0 4 4h1v2a5 5 0 0 1-5 5h-1v2h2v2H7v-2h2v-2H8a5 5 0 0 1-5-5v-2h1a4 4 0 0 0 4-4z"></path>
+                </svg>
+              </span>
+              <div class="project-metric-copy">
+                <strong>6</strong>
+                <h3>预期成果产出</h3>
+                <p>研究与传播并重</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="project-grid">
+          <article class="project-card project-goal-card">
+            <div class="project-card-head">
+              <span class="project-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="7"></circle>
+                  <circle cx="12" cy="12" r="2.4"></circle>
+                  <path d="M12 5V3"></path>
+                  <path d="M19 12h2"></path>
+                </svg>
+              </span>
+              <div>
+                <p class="section-label">01</p>
+                <h2>研究目标</h2>
+              </div>
+            </div>
+
+            <ul class="project-goal-list">
+              <li>解释中华民族共同体意识在基层的实践逻辑</li>
+              <li>梳理火塘会协商机制与共同体形成路径</li>
+              <li>展示司莫拉乡村振兴与民族团结经验</li>
+              <li>构建可持续维护的科普专题平台</li>
+              <li>形成可复制、可推广的案例研究范式</li>
+            </ul>
+          </article>
+
+          <article class="project-card project-content-card">
+            <div class="project-card-head">
+              <span class="project-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M5 6h6v12H5z"></path>
+                  <path d="M13 6h6v12h-6z"></path>
+                  <path d="M11 8c1 .8 2 .8 3 0"></path>
+                </svg>
+              </span>
+              <div>
+                <p class="section-label">02</p>
+                <h2>研究内容</h2>
+              </div>
+            </div>
+
+            <div class="project-content-list">
+              <article class="project-content-item">
+                <span>1</span>
+                <p>案例背景与现实场景</p>
+              </article>
+              <article class="project-content-item">
+                <span>2</span>
+                <p>党建引领与治理实践</p>
+              </article>
+              <article class="project-content-item">
+                <span>3</span>
+                <p>火塘会与协商机制</p>
+              </article>
+              <article class="project-content-item">
+                <span>4</span>
+                <p>乡村振兴与产业发展</p>
+              </article>
+              <article class="project-content-item">
+                <span>5</span>
+                <p>文化传承与旅游融合</p>
+              </article>
+            </div>
+          </article>
+
+          <article class="project-card project-method-card">
+            <div class="project-card-head">
+              <span class="project-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <circle cx="8" cy="9" r="2.5"></circle>
+                  <circle cx="16" cy="9" r="2.5"></circle>
+                  <path d="M4.5 18c.8-2.6 2.7-4 5.5-4s4.7 1.4 5.5 4"></path>
+                  <path d="M11.5 18c.6-1.8 2-2.8 4-2.8S18.8 16.2 19.5 18"></path>
+                </svg>
+              </span>
+              <div>
+                <p class="section-label">03</p>
+                <h2>研究方法路径</h2>
+              </div>
+            </div>
+
+            <div class="method-orbit">
+              <div class="method-orbit-core">
+                <span class="method-core-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <circle cx="8" cy="9" r="2.3"></circle>
+                    <circle cx="16" cy="9" r="2.3"></circle>
+                    <path d="M4.5 18c.8-2.5 2.6-3.8 5.2-3.8s4.4 1.3 5.2 3.8"></path>
+                    <path d="M11.5 18c.5-1.6 1.8-2.5 3.6-2.5 1.7 0 3 .8 3.8 2.5"></path>
+                  </svg>
+                </span>
+                <strong>多方法<br>交叉验证</strong>
+              </div>
+
+              <div class="method-orbit-ring" aria-hidden="true"></div>
+
+              <article class="method-node" style="--x: 50%; --y: 9%;">
+                <h3>文献研究</h3>
+                <p>政策与理论梳理</p>
+              </article>
+              <article class="method-node" style="--x: 82%; --y: 27%;">
+                <h3>问卷调查</h3>
+                <p>量化数据采集</p>
+              </article>
+              <article class="method-node" style="--x: 82%; --y: 73%;">
+                <h3>访谈记录</h3>
+                <p>口述资料整理</p>
+              </article>
+              <article class="method-node" style="--x: 50%; --y: 90%;">
+                <h3>数据分析</h3>
+                <p>统计与可视化</p>
+              </article>
+              <article class="method-node" style="--x: 18%; --y: 73%;">
+                <h3>案例分析</h3>
+                <p>多维度剖析</p>
+              </article>
+              <article class="method-node" style="--x: 18%; --y: 27%;">
+                <h3>田野观察</h3>
+                <p>实地走访访谈</p>
+              </article>
+            </div>
+          </article>
+
+          <article class="project-card project-phase-card">
+            <div class="project-card-head">
+              <span class="project-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <rect x="4" y="5" width="16" height="15" rx="2"></rect>
+                  <path d="M8 3v4"></path>
+                  <path d="M16 3v4"></path>
+                  <path d="M4 10h16"></path>
+                </svg>
+              </span>
+              <div>
+                <p class="section-label">04</p>
+                <h2>阶段安排</h2>
+              </div>
+            </div>
+
+            <div class="phase-timeline">
+              <article class="phase-item">
+                <span class="phase-dot"></span>
+                <div class="phase-item-copy">
+                  <h3>阶段一：准备期</h3>
+                  <span class="phase-date">2024.09 — 2024.12</span>
+                  <p>资料收集、方案设计、前期调研</p>
+                </div>
+              </article>
+              <article class="phase-item is-active">
+                <span class="phase-dot"></span>
+                <div class="phase-item-copy">
+                  <h3>阶段二：实施期</h3>
+                  <span class="phase-date">2025.01 — 2025.06</span>
+                  <p>深入调研、数据采集、内容撰写</p>
+                </div>
+              </article>
+              <article class="phase-item">
+                <span class="phase-dot"></span>
+                <div class="phase-item-copy">
+                  <h3>阶段三：总结期</h3>
+                  <span class="phase-date">2025.07 — 2025.12</span>
+                  <p>成果整理、平台完善、推广应用</p>
+                </div>
+              </article>
+            </div>
+          </article>
+
+          <article class="project-card project-outcome-card">
+            <div class="project-card-head">
+              <span class="project-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M8 4h8v3a4 4 0 0 0 4 4h1v2a5 5 0 0 1-5 5h-1v2h2v2H7v-2h2v-2H8a5 5 0 0 1-5-5v-2h1a4 4 0 0 0 4-4z"></path>
+                </svg>
+              </span>
+              <div>
+                <p class="section-label">05</p>
+                <h2>预期成果</h2>
+              </div>
+            </div>
+
+            <div class="outcome-list">
+              <article class="outcome-item">
+                <span class="outcome-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M7 4h8l4 4v12H7z"></path>
+                    <path d="M15 4v4h4"></path>
+                  </svg>
+                </span>
+                <p>研究报告与论文</p>
+                <strong>2 篇+</strong>
+              </article>
+              <article class="outcome-item">
+                <span class="outcome-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <rect x="4" y="6" width="16" height="12" rx="2"></rect>
+                    <path d="M8 10h8"></path>
+                    <path d="M8 14h5"></path>
+                  </svg>
+                </span>
+                <p>科普专题网页</p>
+                <strong>1 套</strong>
+              </article>
+              <article class="outcome-item">
+                <span class="outcome-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M7 4h10v16H7z"></path>
+                    <path d="M10 8h4"></path>
+                    <path d="M10 12h4"></path>
+                  </svg>
+                </span>
+                <p>调研数据与资料库</p>
+                <strong>1 套</strong>
+              </article>
+              <article class="outcome-item">
+                <span class="outcome-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <rect x="5" y="6" width="10" height="12" rx="2"></rect>
+                    <path d="m15 10 4 2-4 2z"></path>
+                  </svg>
+                </span>
+                <p>宣讲课件与视频</p>
+                <strong>3 项+</strong>
+              </article>
+              <article class="outcome-item">
+                <span class="outcome-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M7 4h10v16H7z"></path>
+                    <path d="M9.5 8h5"></path>
+                    <path d="M9.5 12h5"></path>
+                    <path d="M9.5 16h5"></path>
+                  </svg>
+                </span>
+                <p>案例集与传播手册</p>
+                <strong>1 册</strong>
+              </article>
+              <article class="outcome-item">
+                <span class="outcome-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M7 4h8l4 4v12H7z"></path>
+                    <path d="M15 4v4h4"></path>
+                    <path d="M10 13h6"></path>
+                  </svg>
+                </span>
+                <p>项目总结与成果汇编</p>
+                <strong>1 份</strong>
+              </article>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="project-action-stage">
+          <div class="overview-action-copy">
+            <p class="eyebrow">继续阅读</p>
+            <h2 class="section-title">继续查看关于我们，或返回首页</h2>
+            <p>项目概览负责说明研究为什么这样展开、准备产出什么内容；如果要继续查看团队说明与建议入口，可以进入关于我们，也可以直接回到首页总览整站结构。</p>
+          </div>
+
+          <div class="button-group">
+            <a class="button button-primary" href="about.html" aria-label="进入关于我们页面">查看关于我们</a>
+            <a class="button button-secondary" href="index.html" aria-label="返回首页">返回首页</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer project-page-footer">
+      <div class="project-footer-panel">
+        <div class="overview-footer-copy">
+          <strong>火塘同心：从司莫拉读懂中华民族共同体意识</strong>
+          <p>© 2025 Huotang Together. All rights reserved.</p>
+        </div>
+        <p class="overview-footer-note">本站为公益科普学习交流使用</p>
+        <div class="overview-footer-meta" aria-label="页脚说明">
+          <span>免责声明</span>
+          <span>隐私政策</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

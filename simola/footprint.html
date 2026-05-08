@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>云南足迹｜火塘同心</title>
+  <meta name="theme-color" content="#ede2d2">
+  <meta
+    name="description"
+    content="火塘同心模块四：云南足迹页面，以时间线、云南地图和节点详情联动，展示可跳转的权威报道与原文依据。"
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@500;600;700;900&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="map" class="page-footprint">
+  <div class="site-shell">
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="header-bar">
+        <a class="brand" href="index.html" aria-label="返回火塘同心首页">
+          <span class="brand-mark">火</span>
+          <span class="brand-copy">
+            <strong>火塘同心</strong>
+            <small>从司莫拉读懂中华民族共同体意识</small>
+          </span>
+        </a>
+
+        <div class="nav-panel" id="navPanel">
+          <nav class="nav-links" aria-label="主导航">
+            <a href="index.html" data-page="home">首页</a>
+            <a href="research.html" data-page="overview">平台总览</a>
+            <a href="facts.html" data-page="facts">权威事实</a>
+            <a href="community.html" data-page="community">共同体意识</a>
+            <a href="footprint.html" data-page="map" aria-current="page">云南足迹</a>
+            <a href="project.html" data-page="project">项目概览</a>
+            <a href="about.html" data-page="about">关于我们</a>
+          </nav>
+          <a class="nav-utility" href="project.html" aria-label="进入项目概览页面">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M7 17 17 7"></path>
+              <path d="M9 7h8v8"></path>
+            </svg>
+          </a>
+        </div>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navPanel" aria-label="切换导航">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main class="page-wrap">
+      <section class="footprint-hero reveal">
+        <div class="footprint-hero-shell">
+          <div class="footprint-hero-copy">
+            <p class="section-label">模块四</p>
+            <h1 class="footprint-display-title">云南足迹</h1>
+            <h2>以时间线与地图联动，展示云南考察足迹与可跳转的报道依据</h2>
+            <p>
+              本页面以时间线为轴，呈现习近平总书记在云南的重要考察足迹节点，并补入与文旅融合、
+              民族交往交流交融相关的年度观察报道。地图、节点详情与原文入口同步联动，
+              方便在浏览中核验地点、活动和报道依据。
+            </p>
+          </div>
+
+          <div class="footprint-hero-visual" aria-hidden="true">
+            <img class="footprint-hero-image" src="assets/lijiang-old-town-commons.jpg" alt="">
+            <svg class="footprint-hero-route" viewBox="0 0 640 420" focusable="false" aria-hidden="true">
+              <path d="M92 304C132 280 157 234 208 216C252 201 270 220 316 200C354 183 371 150 410 130C447 110 498 112 546 92"></path>
+              <path d="M96 310C126 296 141 326 180 328C224 330 254 302 302 294C346 286 381 319 430 308C475 298 506 266 558 262"></path>
+            </svg>
+            <button class="footprint-route-node is-active" type="button" data-footprint-node="tengchong" aria-label="聚焦腾冲司莫拉节点" style="--x: 18%; --y: 56%;">
+              <span class="footprint-route-dot"></span>
+              <span class="footprint-route-label">腾冲</span>
+            </button>
+            <button class="footprint-route-node" type="button" data-footprint-node="ludian" aria-label="聚焦鲁甸节点" style="--x: 59%; --y: 24%;">
+              <span class="footprint-route-dot"></span>
+              <span class="footprint-route-label">鲁甸</span>
+            </button>
+            <button class="footprint-route-node" type="button" data-footprint-node="kunming" aria-label="聚焦昆明节点" style="--x: 71%; --y: 48%;">
+              <span class="footprint-route-dot"></span>
+              <span class="footprint-route-label">昆明</span>
+            </button>
+            <button class="footprint-route-node" type="button" data-footprint-node="shilin" aria-label="聚焦石林节点" style="--x: 80%; --y: 54%;">
+              <span class="footprint-route-dot"></span>
+              <span class="footprint-route-label">石林</span>
+            </button>
+            <button class="footprint-route-node" type="button" data-footprint-node="dali" aria-label="聚焦大理节点" style="--x: 44%; --y: 40%;">
+              <span class="footprint-route-dot"></span>
+              <span class="footprint-route-label">大理</span>
+            </button>
+            <button class="footprint-route-node" type="button" data-footprint-node="lijiang" aria-label="聚焦丽江节点" style="--x: 40%; --y: 22%;">
+              <span class="footprint-route-dot"></span>
+              <span class="footprint-route-label">丽江</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="footprint-proofbar">
+          <span class="footprint-proof-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M4 18h16"></path>
+              <path d="M7 14V8"></path>
+              <path d="M12 16V6"></path>
+              <path d="M17 12V9"></path>
+            </svg>
+          </span>
+          <p>地图节点、年份筛选与原文跳转入口联动，所有内容均对应可追溯报道或官方页面。</p>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="footprint-main-grid">
+          <article class="footprint-map-board">
+            <div class="section-head footprint-board-head">
+              <div>
+                <p class="eyebrow">地图联动</p>
+                <h2 class="section-title">云南地图与路线联动</h2>
+              </div>
+              <p class="section-copy" id="footprintYearNote">
+                当前默认聚焦 2020 年司莫拉节点，地图可切换不同年份，右侧详情和原文入口会同步更新。
+              </p>
+            </div>
+
+            <div class="footprint-year-filters" aria-label="年份筛选">
+              <button class="footprint-year-button" type="button" data-footprint-year="all" aria-pressed="false">ALL</button>
+              <button class="footprint-year-button" type="button" data-footprint-year="2008" aria-pressed="false">2008</button>
+              <button class="footprint-year-button" type="button" data-footprint-year="2015" aria-pressed="false">2015</button>
+              <button class="footprint-year-button is-active" type="button" data-footprint-year="2020" aria-pressed="true">2020</button>
+              <button class="footprint-year-button" type="button" data-footprint-year="2025" aria-pressed="false">2025</button>
+            </div>
+
+            <div class="footprint-map-shell" data-footprint-stage="map">
+              <svg class="footprint-map-svg" id="footprintMapSvg" viewBox="0 0 620 500" aria-hidden="true" focusable="false">
+                <g id="footprintMapRegions"></g>
+                <path class="footprint-map-route" id="footprintMapRoutePrimary"></path>
+                <path class="footprint-map-route route-secondary" id="footprintMapRouteSecondary"></path>
+                <path class="footprint-map-route route-tertiary" id="footprintMapRouteTertiary"></path>
+              </svg>
+
+              <div class="footprint-map-layer">
+                <button class="footprint-map-pin pin-west is-active" type="button" data-footprint-node="tengchong" data-node-year="2020" aria-label="查看腾冲司莫拉节点详情">
+                  <span class="footprint-pin-dot"></span>
+                  <span class="footprint-pin-label">腾冲</span>
+                </button>
+
+                <button class="footprint-map-pin pin-sw" type="button" data-footprint-node="menghai" data-node-year="2008" aria-label="查看勐海曼恩村节点详情">
+                  <span class="footprint-pin-dot"></span>
+                  <span class="footprint-pin-label">勐海</span>
+                </button>
+
+                <button class="footprint-map-pin pin-south" type="button" data-footprint-node="ninger" data-node-year="2008" aria-label="查看宁洱那柯里村节点详情">
+                  <span class="footprint-pin-dot"></span>
+                  <span class="footprint-pin-label">宁洱</span>
+                </button>
+
+                <button class="footprint-map-pin pin-east" type="button" data-footprint-node="kunming" data-node-year="2008" aria-label="查看昆明桃源社区节点详情">
+                  <span class="footprint-pin-dot"></span>
+                  <span class="footprint-pin-label">昆明</span>
+                </button>
+
+                <button class="footprint-map-pin pin-east-low" type="button" data-footprint-node="shilin" data-node-year="2008" aria-label="查看石林节点详情">
+                  <span class="footprint-pin-dot"></span>
+                  <span class="footprint-pin-label">石林</span>
+                </button>
+
+                <button class="footprint-map-pin pin-north" type="button" data-footprint-node="ludian" data-node-year="2015" aria-label="查看鲁甸节点详情">
+                  <span class="footprint-pin-dot"></span>
+                  <span class="footprint-pin-label">鲁甸</span>
+                </button>
+
+                <button class="footprint-map-pin pin-mid" type="button" data-footprint-node="dali" data-node-year="2025" aria-label="查看大理节点详情">
+                  <span class="footprint-pin-dot"></span>
+                  <span class="footprint-pin-label">大理</span>
+                </button>
+
+                <button class="footprint-map-pin pin-mid-top" type="button" data-footprint-node="lijiang" data-node-year="2025" aria-label="查看丽江节点详情">
+                  <span class="footprint-pin-dot"></span>
+                  <span class="footprint-pin-label">丽江</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="footprint-focus-strip">
+              <div class="footprint-focus-header">
+                <p class="eyebrow">当前聚焦</p>
+                <h3 id="footprintFocusTitle">当前聚焦：腾冲 · 司莫拉</h3>
+              </div>
+              <div class="footprint-focus-grid">
+                <figure class="footprint-focus-card">
+                  <img id="footprintFocusPrimary" src="assets/hero-simola.png" alt="司莫拉佤族村全景">
+                  <figcaption id="footprintFocusPrimaryCaption">司莫拉佤族村全景</figcaption>
+                </figure>
+                <figure class="footprint-focus-card">
+                  <img id="footprintFocusSecondary" src="assets/simola-overview.png" alt="清水乡田园与村寨空间">
+                  <figcaption id="footprintFocusSecondaryCaption">清水乡田园风光与村寨空间</figcaption>
+                </figure>
+              </div>
+            </div>
+
+            <div class="footprint-route-grid" aria-label="年份路线概览">
+              <button class="footprint-route-card" type="button" data-footprint-year-card="2008">
+                <span class="footprint-route-card-year">2008 年路线</span>
+                <strong>11 月 17—19 日</strong>
+                <p>西双版纳、普洱、昆明与石林走访，关注边疆民族地区发展、社区民生与群众生活。</p>
+              </button>
+              <button class="footprint-route-card" type="button" data-footprint-year-card="2015">
+                <span class="footprint-route-card-year">2015 年路线</span>
+                <strong>1 月 19—21 日</strong>
+                <p>鲁甸灾后恢复重建考察，强调生活恢复、生产恢复与扶贫开发一起抓。</p>
+              </button>
+              <button class="footprint-route-card is-active" type="button" data-footprint-year-card="2020">
+                <span class="footprint-route-card-year">2020 年路线</span>
+                <strong>1 月 19—21 日</strong>
+                <p>腾冲司莫拉成为核心节点，集中呈现脱贫攻坚、民族团结与乡村振兴的现场经验。</p>
+              </button>
+              <button class="footprint-route-card" type="button" data-footprint-year-card="2025">
+                <span class="footprint-route-card-year">2025 年路线</span>
+                <strong>3 月 19—20 日及年度观察</strong>
+                <p>以丽江考察为主线，并补入大理文旅融合与特色产业发展的权威观察入口。</p>
+              </button>
+            </div>
+          </article>
+
+          <aside class="footprint-detail-column">
+            <article class="footprint-detail-card reveal" id="footprintDetailCard" aria-live="polite">
+              <div class="footprint-detail-inner">
+                <div class="footprint-detail-titlebox">
+                  <span class="footprint-detail-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M12 20s6-5 6-9.8a6 6 0 0 0-12 0C6 15 12 20 12 20Z"></path>
+                      <circle cx="12" cy="10" r="2.2"></circle>
+                    </svg>
+                  </span>
+                  <div>
+                    <p class="section-label" id="footprintDetailKicker">2020 年核心案例</p>
+                    <h2 class="story-title" id="footprintDetailTitle">保山市腾冲市清水乡三家村中寨司莫拉佤族村</h2>
+                  </div>
+                </div>
+
+                <div class="footprint-detail-tags" id="footprintDetailTags" aria-label="节点标签">
+                  <span class="meta-pill">2020 年 1 月 19 日</span>
+                  <span class="meta-pill">腾冲市</span>
+                  <span class="meta-pill">核心案例</span>
+                </div>
+
+                <p class="footprint-detail-copy" id="footprintDetailSummary">
+                  司莫拉佤族村是本平台核心场景，连接村寨焕新、火塘会、民族团结与乡村振兴的生动实践。
+                </p>
+
+                <div class="footprint-activity-block">
+                  <strong>活动摘要</strong>
+                  <p id="footprintDetailActivity">走进佤族村寨，同村民围坐聊家常，考察脱贫攻坚、乡村振兴与民族团结。</p>
+                </div>
+
+                <div class="footprint-detail-stats">
+                  <article class="footprint-detail-stat">
+                    <strong id="footprintDetailTheme">共同体叙事</strong>
+                    <span>观察主题</span>
+                  </article>
+                  <article class="footprint-detail-stat">
+                    <strong id="footprintDetailYear">2020</strong>
+                    <span>节点年份</span>
+                  </article>
+                  <article class="footprint-detail-stat">
+                    <strong id="footprintDetailStatus">可跳转原文</strong>
+                    <span>链接状态</span>
+                  </article>
+                </div>
+
+                <div class="footprint-detail-actions">
+                  <a
+                    class="button button-primary"
+                    id="footprintPrimaryLink"
+                    href="https://www.gov.cn/xinwen/2020-01/20/content_5470929.htm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="在新窗口打开腾冲司莫拉原文报道"
+                  >
+                    查看原文报道
+                  </a>
+                </div>
+
+                <p class="source-note" id="footprintSourceNote">来源：中国政府网 / 新华社</p>
+              </div>
+            </article>
+
+            <section class="footprint-report-board reveal" aria-labelledby="footprintReportsTitle">
+              <div class="section-head footprint-report-head">
+                <div>
+                  <p class="eyebrow">节点来源</p>
+                  <h2 class="section-title" id="footprintReportsTitle">节点报道与依据跳转</h2>
+                </div>
+                <p class="section-copy" id="footprintReportsHint">
+                  当前节点已核验 3 条相关原文或依据入口，可直接跳转至对应发布页面。
+                </p>
+              </div>
+
+              <div class="footprint-report-list" id="footprintReportList"></div>
+            </section>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="footprint-action-stage">
+          <div class="overview-action-copy">
+            <p class="eyebrow">继续阅读</p>
+            <h2 class="section-title">继续查看项目概览与关于我们</h2>
+            <p>云南足迹负责把案例放回时间与空间中去理解，接下来可以进入项目概览查看研究结构，也可以到关于我们页补充建议与纠错信息。</p>
+          </div>
+
+          <div class="button-group">
+            <a class="button button-primary" href="project.html" aria-label="进入项目概览页面">进入项目概览</a>
+            <a class="button button-secondary" href="about.html" aria-label="进入关于我们页面">关于我们</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer footprint-page-footer">
+      <div class="footprint-footer-panel">
+        <div class="overview-footer-copy">
+          <strong>火塘同心：从司莫拉读懂中华民族共同体意识</strong>
+          <p>© 2025 Huotang Together. All rights reserved.</p>
+        </div>
+        <p class="overview-footer-note">本站为公益科普学习交流使用</p>
+        <div class="overview-footer-meta" aria-label="页脚说明">
+          <span>免责声明</span>
+          <span>隐私政策</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="assets/yunnan-boundary.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -3,487 +3,306 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>石榴同心 | 司莫拉共同体意识数字平台</title>
+  <title>火塘同心｜从司莫拉读懂中华民族共同体意识</title>
+  <meta name="theme-color" content="#ede2d2">
   <meta
     name="description"
-    content="以司莫拉佤族村为典型案例，围绕铸牢中华民族共同体意识、乡村振兴与数字化治理搭建的可视化研究与展示平台原型。"
+    content="火塘同心专题站首页，以司莫拉佤族村为真实案例，通过平台总览、权威事实、共同体意识、云南足迹、项目概览与关于我们六大板块，展开文化专题展陈式浏览。"
   >
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@500;600;700;900&display=swap"
+    rel="stylesheet"
+  >
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <div class="page-shell">
-    <header class="hero">
-      <nav class="topbar">
-        <div class="brand">
-          <div class="brand-mark">石</div>
-          <div>
-            <p class="brand-kicker">Simola Digital Platform</p>
-            <h1>石榴同心</h1>
-          </div>
-        </div>
-        <div class="nav-links">
-          <a href="#overview">平台总览</a>
-          <a href="#facts">权威事实库</a>
-          <a href="#case">案例价值</a>
-          <a href="#policy">政策依据</a>
-          <a href="#roadmap">研究路线</a>
-          <a href="#sources">数据源</a>
-          <a href="#footprint">足迹地图</a>
-        </div>
-      </nav>
+<body data-page="home" class="page-home">
+  <div class="site-shell">
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
 
-      <section class="hero-grid">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Simola · Unity · Digital Governance</p>
-          <h2>让司莫拉的真实案例、政策脉络与总书记考察足迹，在一个网页里被看见</h2>
-          <p class="hero-text">
-            这个版本面向项目立项与展示场景，重点把司莫拉佤族村的权威事实、典型价值、
-            政策背景和研究路线做成可视化页面。它不是简单的宣传网页，而是一个能承接后续调研、
-            教学传播和成果转化的数字化原型。
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#facts">查看权威事实</a>
-            <a class="button button-secondary" href="#footprint">查看足迹地图</a>
-          </div>
-          <div class="hero-metrics">
-            <article>
-              <strong>2020.01.19</strong>
-              <span>总书记考察司莫拉</span>
-            </article>
-            <article>
-              <strong>374</strong>
-              <span>云南沿边行政村纳入边境幸福村建设</span>
-            </article>
-            <article>
-              <strong>40万+</strong>
-              <span>司莫拉 2023 年接待游客人次</span>
-            </article>
-          </div>
+    <header class="site-header">
+      <div class="header-bar">
+        <a class="brand" href="index.html" aria-label="返回火塘同心首页">
+          <span class="brand-mark">火</span>
+          <span class="brand-copy">
+            <strong>火塘同心</strong>
+            <small>从司莫拉读懂中华民族共同体意识</small>
+          </span>
+        </a>
+
+        <div class="nav-panel" id="navPanel">
+          <nav class="nav-links" aria-label="主导航">
+            <a href="index.html" data-page="home">首页</a>
+            <a href="research.html" data-page="overview">平台总览</a>
+            <a href="facts.html" data-page="facts">权威事实</a>
+            <a href="community.html" data-page="community">共同体意识</a>
+            <a href="footprint.html" data-page="map">云南足迹</a>
+            <a href="project.html" data-page="project">项目概览</a>
+            <a href="about.html" data-page="about">关于我们</a>
+          </nav>
+          <a class="nav-utility" href="research.html" aria-label="进入平台总览页面">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M7 17 17 7"></path>
+              <path d="M9 7h8v8"></path>
+            </svg>
+          </a>
         </div>
 
-        <aside class="hero-panel reveal">
-          <p class="panel-kicker">Current Focus</p>
-          <div class="gradient-card">
-            <h3>立项阶段更需要“讲清楚”，而不是堆砌功能</h3>
-            <ul>
-              <li>讲清案例：司莫拉为何值得做成数字平台。</li>
-              <li>讲清事实：所有核心叙述均附权威来源链接。</li>
-              <li>讲清路线：问题提出、资料搜集、平台构建、成果应用一目了然。</li>
-            </ul>
-          </div>
-        </aside>
-      </section>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navPanel" aria-label="切换导航">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </header>
 
-    <main>
-      <section class="section" id="overview">
-        <div class="section-heading">
-          <p class="eyebrow">Platform Overview</p>
-          <h2>平台总览</h2>
-        </div>
-        <div class="overview-intro reveal">
-          <p>
-            本平台以腾冲司莫拉佤族村为核心案例，围绕铸牢中华民族共同体意识、乡村振兴与边疆治理等主题，
-            系统整合权威资料、考察足迹与政策文件，构建数字化、可视化的学习与研究支持体系，为基层党建、
-            民族团结教育与乡村振兴实践提供可参考的数字化方案。
-          </p>
-        </div>
-        <div class="feature-grid">
-          <article class="feature-card reveal">
-            <span class="feature-index">01</span>
-            <h3>项目定位</h3>
-            <p>以司莫拉佤族村为典型案例，聚焦铸牢中华民族共同体意识、乡村振兴与数字化治理。</p>
-          </article>
-          <article class="feature-card reveal">
-            <span class="feature-index">02</span>
-            <h3>项目意义</h3>
-            <p>展示边疆少数民族地区在党建引领、民族团结、乡村发展中的真实实践与方法论价值。</p>
-          </article>
-          <article class="feature-card reveal">
-            <span class="feature-index">03</span>
-            <h3>平台功能</h3>
-            <p>权威资料呈现、足迹地图、案例解读、政策对照，构成前期展示与后续研究的共用底座。</p>
-          </article>
-          <article class="feature-card reveal">
-            <span class="feature-index">04</span>
-            <h3>可持续扩展</h3>
-            <p>后续可接入问卷、访谈、数据看板、宣讲模块与后台管理功能，逐步升级成研究型平台。</p>
-          </article>
-        </div>
-      </section>
+    <main class="page-wrap">
+      <section class="home-hero-section reveal">
+        <div class="home-hero-carousel" data-carousel data-interval="7200" tabindex="0" aria-label="首页主题轮播">
+          <div class="home-hero-track">
+            <article class="home-hero-slide is-active" data-slide aria-hidden="false" style="--hero-scene: url('assets/home-banner-village-user.jpg');">
+              <div class="home-hero-grid">
+                <div class="home-hero-copy">
+                  <p class="home-hero-kicker">专题首页</p>
+                  <h1>火塘同心</h1>
+                  <h2>从司莫拉读懂中华民族共同体意识</h2>
+                  <div class="home-hero-tags" aria-label="主题标签">
+                    <span>党建引领</span>
+                    <span>民族交融</span>
+                    <span>文化传承</span>
+                    <span>科普传播</span>
+                  </div>
+                  <p class="home-hero-text">
+                    以腾冲司莫拉佤族村为真实案例，呈现边疆民族地区团结进步、文化传承与发展成就，
+                    让抽象政策理念转化为可感知、可理解、可传播的科普内容。
+                  </p>
+                  <div class="button-group">
+                    <a class="button button-primary" href="research.html" aria-label="进入平台总览页面了解平台">了解平台</a>
+                    <a class="button button-secondary" href="footprint.html" aria-label="进入云南足迹页面查看云南足迹">查看云南足迹</a>
+                  </div>
+                </div>
 
-      <section class="section section-soft" id="facts">
-        <div class="section-heading split">
-          <div>
-            <p class="eyebrow">Verified Facts</p>
-            <h2>权威事实库</h2>
-          </div>
-          <p class="heading-note">
-            本板块汇集总书记考察司莫拉佤族村的权威事实、云南省推进民族团结进步示范区的核心信息，
-            以及司莫拉在基层党建、文化传承、产业发展等方面的发展数据。
-          </p>
-        </div>
-
-        <div class="stats-grid">
-          <article class="stat-card reveal">
-            <strong>500多年</strong>
-            <span>司莫拉是有长期历史延续的佤族聚居村寨</span>
-          </article>
-          <article class="stat-card reveal">
-            <strong>342个</strong>
-            <span>腾冲已创建各级民族团结进步示范单位和教育基地</span>
-          </article>
-          <article class="stat-card reveal">
-            <strong>600余场</strong>
-            <span>司莫拉相关宣讲与现场教学累计开展场次</span>
-          </article>
-          <article class="stat-card reveal">
-            <strong>5G 100%</strong>
-            <span>云南沿边行政村 5G 覆盖率达到 100%</span>
-          </article>
-        </div>
-
-        <div class="fact-grid">
-          <article class="fact-card reveal">
-            <p class="story-tag">考察事实</p>
-            <h3>2020 年 1 月 19 日，总书记到腾冲市清水乡三家村中寨司莫拉佤族村考察</h3>
-            <p>
-              中国政府网刊发的新华社稿件明确记载了考察时间、地点和主要场景：
-              总书记同村民围坐交流，强调全面建成小康社会之后要全面推进乡村振兴，
-              让“幸福的佤族村更加幸福”。
-            </p>
-            <a class="source-link" href="https://www.gov.cn/xinwen/2020-01/20/content_5470929.htm" target="_blank" rel="noreferrer">中国政府网</a>
-          </article>
-
-          <article class="fact-card reveal">
-            <p class="story-tag">村寨信息</p>
-            <h3>司莫拉位于腾冲市清水镇三家村中寨，“司莫拉”在佤语中意为“幸福的地方”</h3>
-            <p>
-              保山与腾冲公开资料均将司莫拉视为腾冲边疆民族村寨的重要代表，
-              也是理解“幸福司莫拉”叙事的基础信息。
-            </p>
-            <a class="source-link" href="https://www.baoshan.gov.cn/info/7792/2345314.htm" target="_blank" rel="noreferrer">保山市政府</a>
-          </article>
-
-          <article class="fact-card reveal">
-            <p class="story-tag">发展数据</p>
-            <h3>2023 年司莫拉接待游客 40 多万人次，人均纯收入达到 2.2 万元</h3>
-            <p>
-              云南省民族宗教事务委员会转载的地方资料显示，司莫拉通过农文旅融合持续拓宽增收渠道，
-              已形成可视化展示价值较强的乡村振兴样本。
-            </p>
-            <a class="source-link" href="https://mzzj.yn.gov.cn/html/2024/difangdongtai_0408/53431.html" target="_blank" rel="noreferrer">云南省民宗委</a>
-          </article>
-
-          <article class="fact-card reveal">
-            <p class="story-tag">腾冲实践</p>
-            <h3>腾冲将司莫拉作为现场教学点，2023 年司莫拉旅游收入已超过 500 万元</h3>
-            <p>
-              腾冲市以司莫拉为抓手推进民族团结进步创建、乡村振兴与文旅融合，
-              同步形成示范教育、群众宣讲、旅游品牌和产业增收的综合效应。
-            </p>
-            <a class="source-link" href="https://mzzj.yn.gov.cn/html/2024/difangdongtai_0111/52187.html" target="_blank" rel="noreferrer">云南省民宗委</a>
-          </article>
-
-          <article class="fact-card reveal">
-            <p class="story-tag">全省数据</p>
-            <h3>云南 374 个沿边行政村已完成现代化边境幸福村建设阶段性目标</h3>
-            <p>
-              官方综述显示，到 2023 年底，全省沿边行政村集体经济收入均达 10 万元以上，
-              自然村通硬化路率达 100%，5G 覆盖率达 100%。
-            </p>
-            <a class="source-link" href="https://mzzj.yn.gov.cn/html/2024/yaowendongtai_0704/4054392.html" target="_blank" rel="noreferrer">云南省民宗委</a>
-          </article>
-
-          <article class="fact-card reveal">
-            <p class="story-tag">云南战略</p>
-            <h3>“3815”战略指向“三年上台阶、八年大发展、十五年大跨越”</h3>
-            <p>
-              这是云南推进高质量跨越式发展的阶段性路径设计，也是平台后续理解地方治理、
-              产业升级和数字化建设的重要背景。
-            </p>
-            <a class="source-link" href="https://www.ynjgdj.gov.cn/html/2024/shengzhikuaixun_0111/17667.html" target="_blank" rel="noreferrer">云南机关党建网</a>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="case">
-        <div class="section-heading split">
-          <div>
-            <p class="eyebrow">Case Value</p>
-            <h2>案例价值</h2>
-          </div>
-          <p class="heading-note">
-            本板块聚焦司莫拉佤族村的发展脉络、讲话精神和典型意义，是整个网页最核心的内容层。
-          </p>
-        </div>
-
-        <div class="quote-banner reveal">
-          <p class="quote-mark">“</p>
-          <blockquote>
-            乡亲们脱贫只是迈向幸福生活的第一步，是新生活、新奋斗的起点。要在全面建成小康社会基础上，
-            大力推进乡村振兴，让幸福的佤族村更加幸福。
-          </blockquote>
-          <a class="source-link" href="https://cpc.people.com.cn/n1/2023/0831/c64387-40067839.html" target="_blank" rel="noreferrer">讲话回访报道</a>
-        </div>
-
-        <div class="case-layout case-value-layout">
-          <div class="story-card large reveal">
-            <p class="story-tag">案例简介</p>
-            <h3>司莫拉佤族村是边疆民族地区团结进步、乡村振兴与文化传承协同推进的典型样本</h3>
-            <p>
-              司莫拉佤族村是边疆民族地区团结进步、乡村振兴的典型代表，其发展历程充分体现了总书记
-              “各民族要像石榴籽一样紧紧抱在一起”的重要指示。本板块系统呈现该村在党建引领、
-              民族交往交流交融、产业升级与文化传承等方面的实践，为边疆治理与民族团结教育提供具有示范意义的案例样本。
-            </p>
-            <div class="case-tags">
-              <span>基层党建</span>
-              <span>民族团结</span>
-              <span>文化传承</span>
-              <span>乡村振兴</span>
-              <span>边疆治理</span>
-            </div>
-          </div>
-
-          <div class="story-stack">
-            <article class="story-card reveal">
-              <p class="story-tag">发展脉络</p>
-              <h3>从脱贫出列到文旅融合，司莫拉走出了一条可感知的发展路径</h3>
-              <p>
-                2016 年开始探索利用民族特色发展乡村旅游，2019 年初见成效，人均收入首次过万；
-                2020 年总书记考察后，司莫拉持续成为乡村振兴、民族团结与边疆发展的重要展示窗口。
-              </p>
-              <a class="source-link" href="https://cpc.people.com.cn/n1/2023/0831/c64387-40067839.html" target="_blank" rel="noreferrer">中国共产党新闻网</a>
+                <aside class="home-hero-note">
+                  <span class="meta-label">核心案例</span>
+                  <strong>司莫拉佤族村</strong>
+                  <p>从真实村寨进入专题主题，先看现场，再读概念、事实与足迹。</p>
+                </aside>
+              </div>
             </article>
 
-            <article class="story-card reveal">
-              <p class="story-tag">共同体意识</p>
-              <h3>司莫拉的“共同体表达”既体现在叙事中，也体现在治理和产业中</h3>
-              <p>
-                腾冲围绕司莫拉讲好“幸福司莫拉”的故事，推进现场教学、民族团结宣讲、沉浸式文旅体验和产业联动，
-                将认同教育、文化传播和增收实践连接起来。
-              </p>
-              <a class="source-link" href="https://mzzj.yn.gov.cn/html/2024/difangdongtai_0111/52187.html" target="_blank" rel="noreferrer">云南省民宗委</a>
+            <article class="home-hero-slide" data-slide aria-hidden="true" style="--hero-scene: url('assets/huotang-meeting.jpeg');">
+              <div class="home-hero-grid">
+                <div class="home-hero-copy">
+                  <p class="home-hero-kicker">火塘会现场</p>
+                  <h3>从火塘会进入共同体意识的日常现场</h3>
+                  <p class="home-hero-text">
+                    围坐、交谈、协商与互助不是装饰性的民俗展示，而是共同参与真实发生的地方。
+                    在司莫拉，文化传承、情感联结与基层治理会在同一处火塘边慢慢显影。
+                  </p>
+                  <div class="button-group">
+                    <a class="button button-primary" href="community.html" aria-label="进入共同体意识页面查看概念内容">查看概念阐释</a>
+                    <a class="button button-secondary" href="facts.html" aria-label="进入权威事实页面查看真实资料">查看权威事实</a>
+                  </div>
+                </div>
+
+                <aside class="home-hero-note">
+                  <span class="meta-label">交流场景</span>
+                  <strong>围坐、协商、共议</strong>
+                  <p>火塘会把文化传承、情感联结与基层治理落到具体的人与场景里。</p>
+                </aside>
+              </div>
             </article>
 
-            <article class="story-card reveal">
-              <p class="story-tag">实践价值</p>
-              <h3>基层党建、民族文化传承与乡村治理在这里形成了协同样态</h3>
-              <p>
-                “党支部+公司+合作社+农户”模式、旅游品牌塑造、文化节目创作和现场教学共同构成了
-                司莫拉的复合型示范价值，也使它适合被转化为数字化案例平台。
-              </p>
-              <a class="source-link" href="https://mzzj.yn.gov.cn/html/2024/difangdongtai_0111/52187.html" target="_blank" rel="noreferrer">查看实践细节</a>
+            <article class="home-hero-slide" data-slide aria-hidden="true" style="--hero-scene: url('assets/fieldwork-interview-user.jpg');">
+              <div class="home-hero-grid">
+                <div class="home-hero-copy">
+                  <p class="home-hero-kicker">田野访谈</p>
+                  <h3>让案例成为可传播、可教学、可继续补档的科普内容</h3>
+                  <p class="home-hero-text">
+                    这不是把研究材料机械搬上网页，而是把案例、事实、概念和足迹翻译成更适合公众阅读的专题结构，
+                    让司莫拉的故事能够被持续讲述、核实和扩展。
+                  </p>
+                  <div class="button-group">
+                    <a class="button button-primary" href="project.html" aria-label="进入项目概览页面查看研究结构">查看项目概览</a>
+                    <a class="button button-secondary" href="about.html" aria-label="进入关于我们页面查看维护信息">查看维护说明</a>
+                  </div>
+                </div>
+
+                <aside class="home-hero-note">
+                  <span class="meta-label">研究转译</span>
+                  <strong>从现场材料走向公众阅读</strong>
+                  <p>把访谈、图片、案例与原文整理成更容易理解、更便于传播的专题内容。</p>
+                </aside>
+              </div>
             </article>
           </div>
-        </div>
-      </section>
 
-      <section class="section section-soft" id="policy">
-        <div class="section-heading">
-          <p class="eyebrow">Policy Context</p>
-          <h2>政策依据</h2>
-        </div>
-        <div class="overview-intro reveal">
-          <p>
-            本板块围绕新时代党的民族工作方针、乡村振兴战略与边疆治理体系，整合中央与云南省相关政策文件，
-            为司莫拉案例提供政策对照与理论支撑，明确基层民族地区在国家战略框架下的发展路径与实践要求。
-          </p>
-        </div>
-
-        <div class="policy-grid">
-          <article class="policy-card reveal">
-            <h3>2015 年云南考察提出“三个定位”</h3>
-            <p>
-              2015 年考察云南时，总书记要求云南努力成为我国民族团结进步示范区、生态文明建设排头兵、
-              面向南亚东南亚辐射中心，为后续云南发展提供了战略坐标。
-            </p>
-            <a class="source-link" href="https://cpc.people.com.cn/n1/2020/0123/c419242-31561031.html" target="_blank" rel="noreferrer">人民网回顾</a>
-          </article>
-
-          <article class="policy-card reveal">
-            <h3>铸牢中华民族共同体意识是新时代民族工作的主线</h3>
-            <p>
-              《求是》刊发的重要文章明确提出，要把铸牢中华民族共同体意识作为新时代党的民族工作主线、
-              民族地区各项工作的主线。
-            </p>
-            <a class="source-link" href="https://www.cac.gov.cn/2024-01/31/c_1708375047424723.htm" target="_blank" rel="noreferrer">《求是》转载</a>
-          </article>
-
-          <article class="policy-card reveal">
-            <h3>乡村振兴促进法提供制度支撑</h3>
-            <p>
-              《中华人民共和国乡村振兴促进法》将产业发展、人才支撑、文化繁荣、生态保护和组织建设纳入法治框架，
-              与司莫拉“脱贫后继续推进乡村振兴”的实践高度契合。
-            </p>
-            <a class="source-link" href="https://www.forestry.gov.cn/c/www/cfh/43172.jhtml" target="_blank" rel="noreferrer">国家林草局解读</a>
-          </article>
-
-          <article class="policy-card reveal">
-            <h3>云南现代化边境幸福村建设方案</h3>
-            <p>
-              云南将 374 个沿边行政村纳入现代化边境幸福村建设，聚焦“基础牢、产业兴、环境美、生活好、边疆稳、党建强”，
-              为边疆民族地区治理提供了系统抓手。
-            </p>
-            <a class="source-link" href="https://mzzj.yn.gov.cn/html/2024/yaowendongtai_0704/4054392.html" target="_blank" rel="noreferrer">云南省民宗委</a>
-          </article>
-
-          <article class="policy-card reveal">
-            <h3>云南“3815”战略与地方发展路径</h3>
-            <p>
-              2025 年云南省政府工作报告强调锚定“3815”战略发展目标，继续推进高质量发展、
-              深化“三个定位”建设，成为本平台理解地方政策背景的重要入口。
-            </p>
-            <a class="source-link" href="https://www.yn.gov.cn/zwgk/zfxxgk/zfgzbg/202501/t20250123_308689.html" target="_blank" rel="noreferrer">云南省政府工作报告</a>
-          </article>
-
-          <article class="policy-card reveal">
-            <h3>共同体理念的教育与传播要求</h3>
-            <p>
-              国家民委转载新华社述评强调，要引导各族群众牢固树立休戚与共、荣辱与共、生死与共、命运与共的共同体理念，
-              这为平台的科普传播逻辑提供了直接依据。
-            </p>
-            <a class="source-link" href="https://www.neac.gov.cn/seac/xwzx/202406/1173948.shtml" target="_blank" rel="noreferrer">国家民委</a>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="roadmap">
-        <div class="section-heading">
-          <p class="eyebrow">Research Roadmap</p>
-          <h2>研究路线</h2>
-        </div>
-        <div class="overview-intro reveal">
-          <p>
-            本项目研究遵循“问题导向—资料实证—平台构建—成果推广”的技术路线。首先聚焦司莫拉在民族团结与乡村振兴中的现实需求，
-            其次整合权威资料建立事实库，再通过交互设计构建数字平台，最终形成可示范、可推广的数字化研究与教育范式。
-          </p>
-        </div>
-
-        <div class="roadmap-grid">
-          <article class="roadmap-card reveal">
-            <span>01</span>
-            <h3>问题提出</h3>
-            <p>围绕中华民族共同体意识、边疆治理与乡村振兴的交叉问题，明确平台建设的研究目标。</p>
-            <ul>
-              <li>理论基础：中华民族共同体意识</li>
-              <li>现实场景：边疆民族村寨治理</li>
-            </ul>
-          </article>
-          <article class="roadmap-card reveal">
-            <span>02</span>
-            <h3>资料搜集</h3>
-            <p>系统整合新华社、人民日报、中国政府网、云南省政府网等权威资料，建立事实库与政策库。</p>
-            <ul>
-              <li>公开报道</li>
-              <li>政策文件</li>
-            </ul>
-          </article>
-          <article class="roadmap-card reveal">
-            <span>03</span>
-            <h3>平台构建</h3>
-            <p>通过页面叙事、交互卡片与足迹地图，将抽象研究主题转化为可视化、可展示的数字平台。</p>
-            <ul>
-              <li>案例解读</li>
-              <li>交互地图</li>
-            </ul>
-          </article>
-          <article class="roadmap-card reveal">
-            <span>04</span>
-            <h3>成果应用</h3>
-            <p>服务立项展示、课堂宣讲、资料归档和后续扩展，为大创研究和教育传播提供持续支撑。</p>
-            <ul>
-              <li>展示答辩</li>
-              <li>教学推广</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section class="section section-soft" id="sources">
-        <div class="section-heading">
-          <p class="eyebrow">Data Sources</p>
-          <h2>权威数据源</h2>
-        </div>
-        <div class="overview-intro reveal">
-          <p>
-            本平台所采用的文字、数据、视频与政策文件均来源于新华社、人民日报、央视新闻、中国政府网、
-            云南省政府网等权威渠道，内容真实可追溯，确保平台的权威性与严肃性。
-          </p>
-        </div>
-
-        <div class="source-grid">
-          <a class="source-item reveal" href="https://www.xinhuanet.com/" target="_blank" rel="noreferrer">新华社</a>
-          <a class="source-item reveal" href="https://www.people.com.cn/" target="_blank" rel="noreferrer">人民日报 / 人民网</a>
-          <a class="source-item reveal" href="https://news.cctv.com/" target="_blank" rel="noreferrer">央视新闻</a>
-          <a class="source-item reveal" href="https://www.gov.cn/" target="_blank" rel="noreferrer">中国政府网</a>
-          <a class="source-item reveal" href="https://www.yn.gov.cn/" target="_blank" rel="noreferrer">云南省人民政府网</a>
-          <a class="source-item reveal" href="https://mzzj.yn.gov.cn/" target="_blank" rel="noreferrer">云南省民族宗教事务委员会</a>
-          <a class="source-item reveal" href="https://www.baoshan.gov.cn/" target="_blank" rel="noreferrer">保山市人民政府</a>
-          <a class="source-item reveal" href="https://www.tengchong.gov.cn/" target="_blank" rel="noreferrer">腾冲市人民政府</a>
-          <a class="source-item reveal" href="https://www.gov.cn/xinwen/2020-01/20/content_5470929.htm" target="_blank" rel="noreferrer">司莫拉考察报道</a>
-          <a class="source-item reveal" href="https://www.gov.cn/xinwen/2020-01/20/content_5471046.htm" target="_blank" rel="noreferrer">滇池考察报道</a>
-          <a class="source-item reveal" href="https://politics.people.com.cn/n1/2025/0320/c1001-40442999.html" target="_blank" rel="noreferrer">丽江花卉产业园报道</a>
-          <a class="source-item reveal" href="https://www.ynrd.gov.cn/html/2021/gedirenda_0318/11931.html" target="_blank" rel="noreferrer">洱海保护回访</a>
-        </div>
-      </section>
-
-      <section class="section" id="footprint">
-        <div class="section-heading split">
-          <div>
-            <p class="eyebrow">General Secretary’s Inspection Footprint in Yunnan</p>
-            <h2>总书记考察云南足迹地图</h2>
-          </div>
-          <p class="heading-note">
-            本板块以云南省关键地点为线索，呈现总书记在云南的重要考察与关怀节点。
-            其中司莫拉重点高亮，昭通节点标注为 2015 年考察鲁甸灾后重建工作。
-          </p>
-        </div>
-
-        <div class="map-layout">
-          <div class="map-board reveal">
-            <div class="map-caption">点击地图节点，查看时间、地点与权威报道</div>
-            <div class="map-chart-shell">
-              <div class="map-glow"></div>
-              <div class="map-chart" id="footprintMapChart" aria-label="云南省地图与考察点位"></div>
+          <div class="banner-controls" aria-label="首页轮播控制">
+            <div class="banner-dots">
+              <button class="carousel-dot is-active" type="button" data-carousel-dot="0" aria-current="true" aria-label="查看首页第 1 张轮播"></button>
+              <button class="carousel-dot" type="button" data-carousel-dot="1" aria-current="false" aria-label="查看首页第 2 张轮播"></button>
+              <button class="carousel-dot" type="button" data-carousel-dot="2" aria-current="false" aria-label="查看首页第 3 张轮播"></button>
             </div>
-            <div class="map-legend" aria-hidden="true">
-              <span class="legend-pill"><i class="legend-dot"></i>普通考察节点</span>
-              <span class="legend-pill legend-pill-highlight"><i class="legend-dot"></i>司莫拉重点高亮</span>
+            <div class="banner-arrows">
+              <button class="carousel-control" type="button" data-carousel-prev aria-label="查看上一张首页轮播">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m15 6-6 6 6 6"></path>
+                </svg>
+              </button>
+              <button class="carousel-control" type="button" data-carousel-next aria-label="查看下一张首页轮播">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m9 6 6 6-6 6"></path>
+                </svg>
+              </button>
             </div>
           </div>
-
-          <aside class="map-detail reveal" id="mapDetail">
-            <p class="panel-kicker" id="mapDetailKicker">Footprint Detail</p>
-            <h3 id="mapDetailTitle">昭通｜鲁甸灾后重建与精准扶贫</h3>
-            <p class="map-meta" id="mapDetailMeta">2015 年 1 月 19 日 · 昭通鲁甸</p>
-            <p id="mapDetailText">
-              2015 年云南考察期间，总书记首先到昭通鲁甸地震灾区，看望受灾群众并调研灾后恢复重建工作，
-              强调扶贫开发要扶到点上、扶到根上。
-            </p>
-            <div class="map-links">
-              <a class="source-link" id="mapDetailLinkA" href="https://politics.people.com.cn/n/2015/0122/c1024-26432956.html" target="_blank" rel="noreferrer">查看报道</a>
-              <a class="source-link" id="mapDetailLinkB" href="https://cpc.people.com.cn/n1/2020/0123/c419242-31561031.html" target="_blank" rel="noreferrer">延伸阅读</a>
-            </div>
-          </aside>
         </div>
       </section>
+
+      <section class="section reveal home-module-stage">
+        <div class="section-head home-section-head">
+          <div class="home-section-head-copy">
+            <div>
+              <p class="eyebrow">专题入口</p>
+              <h2 class="section-title">本平台六大板块</h2>
+            </div>
+            <p class="section-copy">
+              围绕平台总览、权威事实、共同体意识、云南足迹、项目概览与关于我们六个页面展开专题阅读。
+            </p>
+          </div>
+          <a class="home-section-more" href="research.html" aria-label="进入平台总览页面浏览全部板块">全部板块</a>
+        </div>
+
+        <div class="home-module-grid">
+          <article class="home-module-card">
+            <div class="home-module-head">
+              <span class="home-module-index">01</span>
+              <span class="home-module-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M5 6h14v12H5z"></path>
+                  <path d="M8 10h8"></path>
+                  <path d="M8 14h5"></path>
+                </svg>
+              </span>
+            </div>
+            <h3>平台总览</h3>
+            <figure class="home-module-media">
+              <img src="assets/preview-research.png" alt="平台总览页面预览图">
+            </figure>
+            <p>了解平台定位、项目意义、内容结构与可持续扩展路径。</p>
+            <a class="home-module-link" href="research.html" aria-label="进入平台总览页面查看详情">查看详情</a>
+          </article>
+
+          <article class="home-module-card">
+            <div class="home-module-head">
+              <span class="home-module-index">02</span>
+              <span class="home-module-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="m12 4 7 3v5c0 4.5-2.4 6.9-7 8-4.6-1.1-7-3.5-7-8V7z"></path>
+                  <path d="m9.5 12 1.7 1.8 3.3-3.8"></path>
+                </svg>
+              </span>
+            </div>
+            <h3>权威事实</h3>
+            <figure class="home-module-media">
+              <img src="assets/preview-facts.png" alt="权威事实页面预览图">
+            </figure>
+            <p>梳理司莫拉的典型性与案例价值，用真实资料增强说服力。</p>
+            <a class="home-module-link" href="facts.html" aria-label="进入权威事实页面查看详情">查看详情</a>
+          </article>
+
+          <article class="home-module-card">
+            <div class="home-module-head">
+              <span class="home-module-index">03</span>
+              <span class="home-module-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M5 6h6v12H5z"></path>
+                  <path d="M13 6h6v12h-6z"></path>
+                  <path d="M11 8c1 .8 2 .8 3 0"></path>
+                </svg>
+              </span>
+            </div>
+            <h3>共同体意识</h3>
+            <figure class="home-module-media">
+              <img src="assets/preview-community.png" alt="共同体意识页面预览图">
+            </figure>
+            <p>规范呈现核心概念、重要论述、政策表述与原文出处。</p>
+            <a class="home-module-link" href="community.html" aria-label="进入共同体意识页面查看详情">查看详情</a>
+          </article>
+
+          <article class="home-module-card">
+            <div class="home-module-head">
+              <span class="home-module-index">04</span>
+              <span class="home-module-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 20s6-5.3 6-10a6 6 0 1 0-12 0c0 4.7 6 10 6 10Z"></path>
+                  <circle cx="12" cy="10" r="2.2"></circle>
+                </svg>
+              </span>
+            </div>
+            <h3>云南足迹</h3>
+            <figure class="home-module-media">
+              <img src="assets/preview-footprint.png" alt="云南足迹页面预览图">
+            </figure>
+            <p>按年份展示云南调研与考察足迹，点击地点可进入对应报道。</p>
+            <a class="home-module-link" href="footprint.html" aria-label="进入云南足迹页面查看详情">查看详情</a>
+          </article>
+
+          <article class="home-module-card">
+            <div class="home-module-head">
+              <span class="home-module-index">05</span>
+              <span class="home-module-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M7 4h8l4 4v12H7z"></path>
+                  <path d="M15 4v4h4"></path>
+                  <path d="M10 13h6"></path>
+                  <path d="M10 17h4"></path>
+                </svg>
+              </span>
+            </div>
+            <h3>项目概览</h3>
+            <figure class="home-module-media">
+              <img src="assets/preview-project.png" alt="项目概览页面预览图">
+            </figure>
+            <p>呈现研究目标、研究内容、方法路径、阶段安排与预期成果。</p>
+            <a class="home-module-link" href="project.html" aria-label="进入项目概览页面查看详情">查看详情</a>
+          </article>
+
+          <article class="home-module-card">
+            <div class="home-module-head">
+              <span class="home-module-index">06</span>
+              <span class="home-module-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="8" r="3"></circle>
+                  <path d="M5 19c1.7-3 4.1-4.5 7-4.5S17.3 16 19 19"></path>
+                </svg>
+              </span>
+            </div>
+            <h3>关于我们</h3>
+            <figure class="home-module-media">
+              <img src="assets/preview-about.png" alt="关于我们页面预览图">
+            </figure>
+            <p>展示团队说明、项目维护原则、建议入口与信息纠错入口。</p>
+            <a class="home-module-link" href="about.html" aria-label="进入关于我们页面查看详情">查看详情</a>
+          </article>
+        </div>
+      </section>
+
     </main>
 
-    <footer class="footer">
-      <div>
-        <p class="footer-title">司莫拉共同体意识数字平台原型</p>
-        <p>当前版本强调“真实、可视化、可展示、可扩展”，适合立项汇报与后续持续迭代。</p>
+    <footer class="site-footer home-site-footer">
+      <div class="home-footer-panel">
+        <div class="home-footer-copy">
+          <strong>火塘同心：从司莫拉读懂中华民族共同体意识</strong>
+          <p>© 2025 Huotang Together. All rights reserved.</p>
+        </div>
+        <p class="home-footer-note">本站为公益科普学习交流使用</p>
       </div>
-      <button class="button button-secondary" id="scrollTopBtn">返回顶部</button>
     </footer>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
-  <script src="vendor/yunnan.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
